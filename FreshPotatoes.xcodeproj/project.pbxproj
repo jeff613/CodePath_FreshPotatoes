@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6380014EB2AE219DD4BC34B9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D99503BFEADE5E8339E1B149 /* libPods.a */; };
+		DF6204CD1A8869990085BE57 /* movie_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6204CC1A8869990085BE57 /* movie_icon.png */; };
+		DF6204CF1A886A100085BE57 /* dvd_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6204CE1A886A100085BE57 /* dvd_icon.png */; };
+		DFBBD5681A80852B00E7F994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBD5671A80852B00E7F994 /* AppDelegate.swift */; };
+		DFBBD56A1A80852B00E7F994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBD5691A80852B00E7F994 /* ViewController.swift */; };
+		DFBBD56D1A80852B00E7F994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFBBD56B1A80852B00E7F994 /* Main.storyboard */; };
+		DFBBD56F1A80852B00E7F994 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFBBD56E1A80852B00E7F994 /* Images.xcassets */; };
+		DFBBD5721A80852B00E7F994 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBBD5701A80852B00E7F994 /* LaunchScreen.xib */; };
+		DFBBD57E1A80852C00E7F994 /* FreshPotatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBD57D1A80852C00E7F994 /* FreshPotatoesTests.swift */; };
+		DFE03CB31A80B8400087857D /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE03CB21A80B8400087857D /* MovieModel.swift */; };
+		DFE03CB91A81EBA40087857D /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE03CB81A81EBA40087857D /* MovieTableViewCell.swift */; };
+		DFE03CBB1A81F8F00087857D /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE03CBA1A81F8F00087857D /* MovieDetailsViewController.swift */; };
+		DFEA0E081A846F8F005403FE /* blabla.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEA0E071A846F8F005403FE /* blabla.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFBBD5781A80852C00E7F994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFBBD55A1A80852B00E7F994 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFBBD5611A80852B00E7F994;
+			remoteInfo = FreshPotatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3586D9CCB347521A7FC5F255 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BFAE052D2C7C7FA9C7D259E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D99503BFEADE5E8339E1B149 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6204CC1A8869990085BE57 /* movie_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie_icon.png; sourceTree = "<group>"; };
+		DF6204CE1A886A100085BE57 /* dvd_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dvd_icon.png; sourceTree = "<group>"; };
+		DFBBD5621A80852B00E7F994 /* FreshPotatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshPotatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBBD5661A80852B00E7F994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBBD5671A80852B00E7F994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFBBD5691A80852B00E7F994 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFBBD56C1A80852B00E7F994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFBBD56E1A80852B00E7F994 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFBBD5711A80852B00E7F994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DFBBD5771A80852C00E7F994 /* FreshPotatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreshPotatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBBD57C1A80852C00E7F994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFBBD57D1A80852C00E7F994 /* FreshPotatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreshPotatoesTests.swift; sourceTree = "<group>"; };
+		DFE03CB21A80B8400087857D /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		DFE03CB81A81EBA40087857D /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		DFE03CBA1A81F8F00087857D /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		DFEA0E061A846F8E005403FE /* FreshPotatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreshPotatoes-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFEA0E071A846F8F005403FE /* blabla.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = blabla.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFBBD55F1A80852B00E7F994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6380014EB2AE219DD4BC34B9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBBD5741A80852C00E7F994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08EAC51949C2F7563C75BF13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D99503BFEADE5E8339E1B149 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ACE6060B47E8363CEA18821 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3586D9CCB347521A7FC5F255 /* Pods.debug.xcconfig */,
+				BFAE052D2C7C7FA9C7D259E0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFBBD5591A80852B00E7F994 = {
+			isa = PBXGroup;
+			children = (
+				DFBBD5641A80852B00E7F994 /* FreshPotatoes */,
+				DFBBD57A1A80852C00E7F994 /* FreshPotatoesTests */,
+				DFBBD5631A80852B00E7F994 /* Products */,
+				7ACE6060B47E8363CEA18821 /* Pods */,
+				08EAC51949C2F7563C75BF13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFBBD5631A80852B00E7F994 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFBBD5621A80852B00E7F994 /* FreshPotatoes.app */,
+				DFBBD5771A80852C00E7F994 /* FreshPotatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFBBD5641A80852B00E7F994 /* FreshPotatoes */ = {
+			isa = PBXGroup;
+			children = (
+				DFE03CB81A81EBA40087857D /* MovieTableViewCell.swift */,
+				DFBBD5671A80852B00E7F994 /* AppDelegate.swift */,
+				DFBBD5691A80852B00E7F994 /* ViewController.swift */,
+				DFE03CB21A80B8400087857D /* MovieModel.swift */,
+				DFBBD56B1A80852B00E7F994 /* Main.storyboard */,
+				DFBBD56E1A80852B00E7F994 /* Images.xcassets */,
+				DFBBD5701A80852B00E7F994 /* LaunchScreen.xib */,
+				DFBBD5651A80852B00E7F994 /* Supporting Files */,
+				DFE03CBA1A81F8F00087857D /* MovieDetailsViewController.swift */,
+				DFEA0E071A846F8F005403FE /* blabla.m */,
+				DFEA0E061A846F8E005403FE /* FreshPotatoes-Bridging-Header.h */,
+			);
+			path = FreshPotatoes;
+			sourceTree = "<group>";
+		};
+		DFBBD5651A80852B00E7F994 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF6204CE1A886A100085BE57 /* dvd_icon.png */,
+				DF6204CC1A8869990085BE57 /* movie_icon.png */,
+				DFBBD5661A80852B00E7F994 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFBBD57A1A80852C00E7F994 /* FreshPotatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFBBD57D1A80852C00E7F994 /* FreshPotatoesTests.swift */,
+				DFBBD57B1A80852C00E7F994 /* Supporting Files */,
+			);
+			path = FreshPotatoesTests;
+			sourceTree = "<group>";
+		};
+		DFBBD57B1A80852C00E7F994 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFBBD57C1A80852C00E7F994 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFBBD5611A80852B00E7F994 /* FreshPotatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBBD5811A80852C00E7F994 /* Build configuration list for PBXNativeTarget "FreshPotatoes" */;
+			buildPhases = (
+				2B8D86D34C161ECF12EDBEFA /* Check Pods Manifest.lock */,
+				DFBBD55E1A80852B00E7F994 /* Sources */,
+				DFBBD55F1A80852B00E7F994 /* Frameworks */,
+				DFBBD5601A80852B00E7F994 /* Resources */,
+				65FDE0D42B63272C120505CF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreshPotatoes;
+			productName = FreshPotatoes;
+			productReference = DFBBD5621A80852B00E7F994 /* FreshPotatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFBBD5761A80852C00E7F994 /* FreshPotatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBBD5841A80852C00E7F994 /* Build configuration list for PBXNativeTarget "FreshPotatoesTests" */;
+			buildPhases = (
+				DFBBD5731A80852C00E7F994 /* Sources */,
+				DFBBD5741A80852C00E7F994 /* Frameworks */,
+				DFBBD5751A80852C00E7F994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFBBD5791A80852C00E7F994 /* PBXTargetDependency */,
+			);
+			name = FreshPotatoesTests;
+			productName = FreshPotatoesTests;
+			productReference = DFBBD5771A80852C00E7F994 /* FreshPotatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFBBD55A1A80852B00E7F994 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Dion613;
+				TargetAttributes = {
+					DFBBD5611A80852B00E7F994 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DFBBD5761A80852C00E7F994 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DFBBD5611A80852B00E7F994;
+					};
+				};
+			};
+			buildConfigurationList = DFBBD55D1A80852B00E7F994 /* Build configuration list for PBXProject "FreshPotatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFBBD5591A80852B00E7F994;
+			productRefGroup = DFBBD5631A80852B00E7F994 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFBBD5611A80852B00E7F994 /* FreshPotatoes */,
+				DFBBD5761A80852C00E7F994 /* FreshPotatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFBBD5601A80852B00E7F994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBBD56D1A80852B00E7F994 /* Main.storyboard in Resources */,
+				DF6204CD1A8869990085BE57 /* movie_icon.png in Resources */,
+				DFBBD5721A80852B00E7F994 /* LaunchScreen.xib in Resources */,
+				DF6204CF1A886A100085BE57 /* dvd_icon.png in Resources */,
+				DFBBD56F1A80852B00E7F994 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBBD5751A80852C00E7F994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B8D86D34C161ECF12EDBEFA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65FDE0D42B63272C120505CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFBBD55E1A80852B00E7F994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE03CBB1A81F8F00087857D /* MovieDetailsViewController.swift in Sources */,
+				DFE03CB31A80B8400087857D /* MovieModel.swift in Sources */,
+				DFBBD56A1A80852B00E7F994 /* ViewController.swift in Sources */,
+				DFEA0E081A846F8F005403FE /* blabla.m in Sources */,
+				DFE03CB91A81EBA40087857D /* MovieTableViewCell.swift in Sources */,
+				DFBBD5681A80852B00E7F994 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFBBD5731A80852C00E7F994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBBD57E1A80852C00E7F994 /* FreshPotatoesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFBBD5791A80852C00E7F994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFBBD5611A80852B00E7F994 /* FreshPotatoes */;
+			targetProxy = DFBBD5781A80852C00E7F994 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFBBD56B1A80852B00E7F994 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBBD56C1A80852B00E7F994 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFBBD5701A80852B00E7F994 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFBBD5711A80852B00E7F994 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFBBD57F1A80852C00E7F994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFBBD5801A80852C00E7F994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFBBD5821A80852C00E7F994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3586D9CCB347521A7FC5F255 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FreshPotatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreshPotatoes/FreshPotatoes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFBBD5831A80852C00E7F994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFAE052D2C7C7FA9C7D259E0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FreshPotatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreshPotatoes/FreshPotatoes-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DFBBD5851A80852C00E7F994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreshPotatoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshPotatoes.app/FreshPotatoes";
+			};
+			name = Debug;
+		};
+		DFBBD5861A80852C00E7F994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FreshPotatoesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreshPotatoes.app/FreshPotatoes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFBBD55D1A80852B00E7F994 /* Build configuration list for PBXProject "FreshPotatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBBD57F1A80852C00E7F994 /* Debug */,
+				DFBBD5801A80852C00E7F994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBBD5811A80852C00E7F994 /* Build configuration list for PBXNativeTarget "FreshPotatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBBD5821A80852C00E7F994 /* Debug */,
+				DFBBD5831A80852C00E7F994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBBD5841A80852C00E7F994 /* Build configuration list for PBXNativeTarget "FreshPotatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFBBD5851A80852C00E7F994 /* Debug */,
+				DFBBD5861A80852C00E7F994 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFBBD55A1A80852B00E7F994 /* Project object */;
+}

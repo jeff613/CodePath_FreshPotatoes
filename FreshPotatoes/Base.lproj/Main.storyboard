@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GaS-A6-5pZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies-->
+        <scene sceneID="jrO-nO-1bD">
+            <objects>
+                <tableViewController restorationIdentifier="box" id="bJM-Ol-dry" customClass="ViewController" customModule="FreshPotatoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="VVc-fa-Bhj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops, can't get data from server" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="r2y-vq-ClV">
+                            <rect key="frame" x="0.0" y="203" width="600" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="117" id="iqe-mR-l2d" customClass="MovieTableViewCell" customModule="FreshPotatoes" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iqe-mR-l2d" id="YWc-s1-sg4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Name Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-Qa-Msg">
+                                            <rect key="frame" x="16" y="8" width="283" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDS-Ky-fpJ">
+                                            <rect key="frame" x="498" y="4" width="88" height="110"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="88" id="3fz-y0-geO"/>
+                                                <constraint firstAttribute="height" constant="110" id="hLe-fI-DLz"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sDS-Ky-fpJ" secondAttribute="trailing" constant="6" id="atj-OL-34z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="NameLabel" destination="OjA-Qa-Msg" id="2mk-Dc-3j2"/>
+                                    <outlet property="PosterImageView" destination="sDS-Ky-fpJ" id="Cny-gp-L7B"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bJM-Ol-dry" id="FOv-fW-o8E"/>
+                            <outlet property="delegate" destination="bJM-Ol-dry" id="La4-6R-i74"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Box Office" image="movie_icon.png" id="3m6-Ln-6iZ"/>
+                    <navigationItem key="navigationItem" title="Movies" id="Gh5-2n-5wN"/>
+                    <connections>
+                        <outlet property="ErrorLabel" destination="r2y-vq-ClV" id="cQK-hI-nqU"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01D-tw-JBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="104"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="mtw-hY-x3l">
+            <objects>
+                <viewController storyboardIdentifier="DetailsView" id="lb7-qd-LBA" customClass="MovieDetailsViewController" customModule="FreshPotatoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ipr-dP-yja"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qw8-WN-f5h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PKe-gj-tdT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lBT-FM-Ckc">
+                                <rect key="frame" x="66" y="402" width="320" height="250"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wlc-4z-uLT">
+                                <rect key="frame" x="164" y="28" width="260" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="6tu-uv-lxC"/>
+                                    <constraint firstAttribute="height" constant="364" id="vod-N9-VMs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Wlc-4z-uLT" secondAttribute="centerX" id="0L2-S9-jfj"/>
+                            <constraint firstAttribute="centerX" secondItem="lBT-FM-Ckc" secondAttribute="centerX" id="UGI-BS-Abf"/>
+                            <constraint firstItem="Qw8-WN-f5h" firstAttribute="top" secondItem="lBT-FM-Ckc" secondAttribute="bottom" constant="20" id="ajc-fP-Pwo"/>
+                            <constraint firstItem="Wlc-4z-uLT" firstAttribute="top" secondItem="Ipr-dP-yja" secondAttribute="bottom" constant="10" id="i9C-WE-j5A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PosterImageView" destination="Wlc-4z-uLT" id="NE6-C8-Lxq"/>
+                        <outlet property="SynopsisTextView" destination="lBT-FM-Ckc" id="xf5-Dl-2zo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3M-m9-Mkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1294" y="364"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BNo-x2-TMq">
+            <objects>
+                <navigationController id="GaS-A6-5pZ" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xmd-X1-DcG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PJT-hf-VxN" kind="relationship" relationship="rootViewController" id="GyP-Gf-Arr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9TV-CI-XiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="358"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="pQZ-HX-dj7">
+            <objects>
+                <tableViewController restorationIdentifier="dvd" id="W6T-Gz-48Y" customClass="ViewController" customModule="FreshPotatoes" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="117" sectionHeaderHeight="22" sectionFooterHeight="22" id="lCI-ZM-yc8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops, can't get data from server" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gNi-9Z-N8u">
+                            <rect key="frame" x="0.0" y="203" width="600" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="117" id="AS7-7z-LNH" customClass="MovieTableViewCell" customModule="FreshPotatoes" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AS7-7z-LNH" id="zR6-Dh-uPX">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Movie Name Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdw-cN-77l">
+                                            <rect key="frame" x="16" y="8" width="283" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uEy-kL-GTP">
+                                            <rect key="frame" x="498" y="4" width="88" height="110"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="110" id="OwB-St-dQE"/>
+                                                <constraint firstAttribute="width" constant="88" id="hQa-IJ-p97"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="uEy-kL-GTP" secondAttribute="trailing" constant="6" id="4Rq-ox-1bA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="NameLabel" destination="pdw-cN-77l" id="jZF-nP-atM"/>
+                                    <outlet property="PosterImageView" destination="uEy-kL-GTP" id="eSI-Wk-bRk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W6T-Gz-48Y" id="hvr-YF-ssJ"/>
+                            <outlet property="delegate" destination="W6T-Gz-48Y" id="KtO-ep-Q72"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="DVD Rental" image="dvd_icon.png" id="ZXP-52-nJ9"/>
+                    <navigationItem key="navigationItem" title="Movies" id="2bb-NP-50S"/>
+                    <connections>
+                        <outlet property="ErrorLabel" destination="gNi-9Z-N8u" id="64o-CI-8an"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i5z-NV-5lv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="800"/>
+        </scene>
+        <!--Movies-->
+        <scene sceneID="lid-gb-QEh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PJT-hf-VxN" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Movies" id="rRz-vw-mn4"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="MqQ-MS-YaX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bJM-Ol-dry" kind="relationship" relationship="viewControllers" id="2rc-iK-Mqz"/>
+                        <segue destination="W6T-Gz-48Y" kind="relationship" relationship="viewControllers" id="INd-MM-IXK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N20-gb-tKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-257" y="358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dvd_icon.png" width="20" height="20"/>
+        <image name="movie_icon.png" width="20" height="20"/>
+    </resources>
+</document>
